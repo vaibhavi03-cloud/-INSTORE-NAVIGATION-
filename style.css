@@ -1,0 +1,68 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+  border-radius: 3px;
+}
+
+/* Firefox Scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 transparent;
+}
+
+/* Animated Path (Neon Effect) */
+.path-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: routeFlow 4s ease forwards;
+  stroke: #00f5ff;
+  filter: drop-shadow(0 0 8px #00eaff);
+}
+
+@keyframes routeFlow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Hover Glow Buttons */
+.btn-glow {
+  transition: 0.25s;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 12px #00ffe7;
+  transform: translateY(-2px);
+}
+
+/* Floating Animation */
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
