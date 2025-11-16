@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In-Store Navigator</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- React + Import Map (GitHub compatible) -->
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19",
+        "react-dom": "https://esm.sh/react-dom@19"
+      }
+    }
+  </script>
+
+  <!-- App Entry -->
+  <script type="module" src="index.tsx"></script>
+
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white font-inter min-h-screen">
+
+  <!-- Header -->
+  <header class="backdrop-blur-xl bg-white/10 border-b border-white/10 shadow-lg fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold tracking-wide">
+        🛍️ In-Store Navigation
+      </h1>
+
+      <nav class="space-x-6 text-gray-200 font-medium hidden md:block">
+        <a href="#" class="hover:text-white transition">Home</a>
+        <a href="#" class="hover:text-white transition">Floors</a>
+        <a href="#" class="hover:text-white transition">Brands</a>
+        <a href="#" class="hover:text-white transition">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main React Root -->
+  <main id="root" class="pt-24"></main>
+
+</body>
+
+</html>
